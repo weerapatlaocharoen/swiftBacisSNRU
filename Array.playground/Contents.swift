@@ -19,3 +19,11 @@ strArrayName2 = ["AAA","BBB","CCC"]
 var DoubleArrayNum3 = [1.2,1.3,1.4]
 var doubleArrayNum4 = [Double]()
 doubleArrayNum4 = [2.1,2.2,2.3]
+
+
+//เพิ่มสมาชิกให้ Array
+print("intNumber2 ==> \(intArrayNumber2)")
+intArrayNumber2.append(111)
+
+strArrayName2
+strArrayName2.append("Superman")
