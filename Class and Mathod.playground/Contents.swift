@@ -10,23 +10,46 @@ class MyClass {
     var bolStatus = true
 
     // Create Method or Function Void Type การสร้าง เมธทอด
-    func joVoidType() -> Void {
+    func myVoidType() -> Void {
         print("นี่คือ เมธธอดแบบ Void")
     }
 
+    // Method Return Type
+    func myReturnType() -> Int {
+        var intResult = intNumber * 5
+        return intResult
+        
+    }
+    
+    
+    //เมธธอด Arg & Return
+    func myofficer(strTitle: String, strdetail: String) -> String  {
+        let strofficer = strTitle + " " + strName + " " + strdetail
+        return
+        
+    }
+    
+    
 } // MyClass
 
 //Inheriate Opject การสืบทอดคลาส
-var joClass = MyClass()
+var myClass = MyClass()
 
 //การเรียกใช้งานตัวแปร
-var intMyNumber = joClass.intNumber * 2
+var intMyNumber = myClass.intNumber * 2
 print("intNumber ==> \(intMyNumber)")
 
-print("Before ==> \(joClass.strName)")
-joClass.strName = "วีรภัทร เหล่าเจริญ"
-print("After ==> \(joClass.strName)")
+print("Before ==> \(myClass.strName)")
+myClass.strName = "วีรภัทร เหล่าเจริญ"
+print("After ==> \(myClass.strName)")
 
 //การเรียกใช้งาน เมธธอด 
-joClass.joVoidType()
+myClass.myVoidType()
+
+var intMyResult = myClass.myReturnType()
+
+var strMyStudent = myClass.myofficer(strTitle: "Title", strdetail: "Detail")
+
+
+
 
